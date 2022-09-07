@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`hlx jsx runtime renders a fragment with a single child 1`] = `
+<DocumentFragment>
+  Text Content
+</DocumentFragment>
+`;
+
+exports[`hlx jsx runtime renders a fragment with mutliple children 1`] = `
+<DocumentFragment>
+  <p>
+    First Paragraph
+  </p>
+  <p>
+    Second Paragraph
+  </p>
+  <p>
+    Third Paragraph
+  </p>
+</DocumentFragment>
+`;
+
+exports[`hlx jsx runtime renders an empty fragment 1`] = `<DocumentFragment />`;
+
+exports[`hlx jsx runtime renders components 1`] = `
+<div>
+  <p>
+    foobar
+  </p>
+  <p>
+    Foo Bar
+    <em>
+      Foo Bar
+    </em>
+  </p>
+</div>
+`;
+
+exports[`hlx jsx runtime renders dom nodes with styles 1`] = `
+<div>
+  <p
+    style="color: red; font-size: large;"
+  >
+    Hello World
+  </p>
+</div>
+`;
+
+exports[`hlx jsx runtime renders simple dom nodes 1`] = `
+<div>
+  <h1>
+    Hello World
+  </h1>
+  <p>
+    This is a unordered list of numbers:
+  </p>
+  <ul>
+    <li>
+      1
+    </li>
+    <li>
+      2
+    </li>
+    <li>
+      3
+    </li>
+  </ul>
+  <a
+    href="https://letmegooglethat.com/?q=what+is+jsx"
+  >
+    Find out more
+  </a>
+</div>
+`;

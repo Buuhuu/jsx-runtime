@@ -1,0 +1,28 @@
+{
+  "name": "@buuhuu/jsx-runtime",
+  "version": "1.0.0",
+  "description": "Minimal JSX runtime using DOM APIs",
+  "main": "src/jsx-runtime.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src/*.js",
+    "test": "npm run lint && npm run jest",
+    "jest": "jest"
+  },
+  "author": "Dirk Rudolph (https://github.com/buuhuu)",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/plugin-transform-react-jsx": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
+    "babel-jest": "^29.0.2",
+    "eslint": "^8.23.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.0.1",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "jest": "^29.0.2",
+    "jest-environment-jsdom": "^29.0.2"
+  }
+}
