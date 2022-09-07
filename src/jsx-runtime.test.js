@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+const { getByText } = require("@testing-library/dom")
+
 describe('hlx jsx runtime', () => {
 
     it('renders simple dom nodes', () => {
@@ -79,5 +81,15 @@ describe('hlx jsx runtime', () => {
         )
 
         expect(nodes).toMatchSnapshot()
+    })
+
+    it('renders listeners', () => {
+        let clicked = false
+        const nodes = <button onclick={() => clicked = true}>Button</button>
+        const button = getByText(nodes, 'Button')
+        
+        button.click()
+
+        expect(clicked).toBeTruthy();
     })
 })
