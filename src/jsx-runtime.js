@@ -26,8 +26,8 @@ function appendChildren (element, children) {
 export function jsx (tag, props) {
   if (tag.constructor === String) {
     const element = appendChildren(document.createElement(tag), props.children)
-    delete props.children
     Object.keys(props).forEach(attribute => {
+      if (attribute === 'children') return
       attribute === 'style'
         ? Object.keys(props[attribute]).forEach(styleAttribute =>
           element.style[styleAttribute] = props[attribute][styleAttribute])

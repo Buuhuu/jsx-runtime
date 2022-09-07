@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-const { getByText } = require("@testing-library/dom")
+import { getByText } from "@testing-library/dom"
 
 describe('hlx jsx runtime', () => {
 
